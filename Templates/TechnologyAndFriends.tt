@@ -1,0 +1,38 @@
+﻿<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ parameter name="title" type="System.String" #>
+<#@ parameter name="episodeNumber" type="System.String" #>
+<#@ parameter name="videoId" type="System.String" #>
+<#@ parameter name="description" type="System.String" #>
+=========
+BLOG POST
+=========
+
+<p><img border="0" src="http://www.davidgiard.com/content/binary/TechnologyAndFriends.gif" /> </p>
+
+<p><strong>Episode <#=episodeNumber #></strong></p>
+<iframe height="316" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/<#=videoId #>" frameborder="0" width="560" allow="autoplay; encrypted-media"></iframe> 
+
+<p><a href="https://youtu.be/<#=videoId #>" target="_blank">
+<#=title #>
+</a></p>
+
+<p>
+<#=description #>
+</p>
+
+============
+SOCIAL MEDIA
+============
+
+Monday on #TechnologyAndFriends:
+<#=title #>
+
+-----
+
+#TechnologyAndFriends, Episode <#=episodeNumber #>:
+<#=title #>
+https://youtu.be/<#=videoId #>
